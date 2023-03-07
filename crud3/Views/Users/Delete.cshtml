@@ -1,0 +1,24 @@
+﻿@model crud3.Models.User
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<div>
+  <dl>
+    <dt>@Html.DisplayNameFor(user => user.Name)</dt>
+    <dd>@Html.DisplayFor(user => user.Name)</dd>
+    <td>@Html.DisplayNameFor(user => user.Email)</td>
+    <dd>@Html.DisplayFor(user => user.Email)</dd>
+  </dl>
+  <form asp-action="Delete">
+    <input type="hidden" asp-for="Id"/>
+    <input type="submit" value="Delete"/>
+  </form>
+
+</div>
+</body>
+</html>

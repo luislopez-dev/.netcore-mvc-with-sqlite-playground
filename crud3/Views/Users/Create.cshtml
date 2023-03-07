@@ -1,0 +1,29 @@
+﻿@model crud3.Models.User
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<div>
+  <form asp-action="Create">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div>
+      <label asp-for="Name"></label>
+      <input asp-for="Name"/>
+      <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+      <label asp-for="Email"></label>
+      <input asp-for="Email"/>
+      <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+      <input type="submit" value="Create"/>
+    </div>
+  </form>
+</div>
+</body>
+</html>

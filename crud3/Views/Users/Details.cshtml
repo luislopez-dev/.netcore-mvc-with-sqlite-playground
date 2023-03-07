@@ -1,0 +1,25 @@
+﻿@model crud3.Models.User
+
+@{
+  Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<div>
+  <dl>
+    <dd>@Html.DisplayNameFor(user => user.Name)</dd>
+    <dt>@Html.DisplayFor(user => user.Name)</dt>
+    <dd>@Html.DisplayNameFor(user => user.Email)</dd>
+    <dt>@Html.DisplayFor(user => user.Email)</dt>
+  </dl>
+    <a asp-action="Index">Index</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+</div>
+</body>
+</html>
